@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Strict 3-Color Theme:
+  Background: #09090b (Tailwind zinc-950)
+  Text: #f4f4f5 (Tailwind zinc-50)
+  Accent: #f59e0b (Tailwind amber-500)
+*/
+
+body {
+  background-color: #09090b; 
+  color: #f4f4f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Matchmaking Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a; /* slightly lighter black */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b; /* Solid Leetcode Yellow */
+}
+
+html {
+  scroll-behavior: smooth;
+}

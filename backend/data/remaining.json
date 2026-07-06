@@ -1,0 +1,842 @@
+[ 
+  {
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "topic": "Binary Search",
+    "description": "Given an integer array `nums`, return the length of the longest strictly increasing subsequence.\n\nA subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, `[3,6,2,7]` is a subsequence of the array `[0,3,1,6,2,2,7]`.\n\n\nExample 1:\nInput: nums = [10,9,2,5,3,7,101,18]\nOutput: 4\nExplanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.\n\n\nExample 2:\nInput: nums = [0,1,0,3,2,3]\nOutput: 4\n\nExample 3:\nInput: nums = [7,7,7,7,7,7,7]\nOutput: 1\n\nConstraints:\n`1 <= nums.length <= 2500`\n`-104 <= nums[i] <= 104`\nFollow up:\nCould you come up with the `O(n2)` solution?\nCould you improve it to `O(n log(n))` time complexity?",
+    "starterCode": {
+      "cpp": "// Problem: Longest Increasing Subsequence\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Longest Increasing Subsequence\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "10 9 2 5 3 7 101 18",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "0 1 0 3 2 3",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "7 7 7 7 7 7 7",
+        "expectedOutput": "1"
+      }
+    ]
+  },
+  {
+    "title": "Remove Invalid Parentheses",
+    "difficulty": "Hard",
+    "topic": "Depth-first Search",
+    "description": "Given a string `s` that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.\n\nReturn all the possible results. You may return the answer in any order.\n\n\nExample 1:\nInput: s = \"()())()\"\nOutput: [\"(())()\",\"()()()\"]\n\nExample 2:\nInput: s = \"(a)())()\"\nOutput: [\"(a())()\",\"(a)()()\"]\n\nExample 3:\nInput: s = \")(\"\nOutput: [\"\"]\n\nConstraints:\n`1 <= s.length <= 25`\n`s` consists of lowercase English letters and parentheses `'('` and `')'`.\n\nThere will be at most `20` parentheses in `s`.",
+    "starterCode": {
+      "cpp": "// Problem: Remove Invalid Parentheses\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Remove Invalid Parentheses\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "()())()",
+        "expectedOutput": "(())() ()()()"
+      },
+      {
+        "input": "(a)())()",
+        "expectedOutput": "(a())() (a)()()"
+      },
+      {
+        "input": ")(",
+        "expectedOutput": ""
+      }
+    ]
+  },
+  {
+    "title": "Range Sum Query - Immutable",
+    "difficulty": "Easy",
+    "topic": "Dynamic Programming",
+    "description": "Given an integer array `nums`, find the sum of the elements between indices `left` and `right` inclusive, where `(left <= right)`.\n\nImplement the `NumArray` class:\n`NumArray(int[] nums)` initializes the object with the integer array `nums`.\n\n`int sumRange(int left, int right)` returns the sum of the elements of the `nums` array in the range `[left, right]` inclusive (i.e., `sum(nums[left], nums[left + 1], ... , nums[right])`).\n\n\nExample 1:\nInput\n[\"NumArray\", \"sumRange\", \"sumRange\", \"sumRange\"]\n[[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]\nOutput\n[null, 1, -1, -3]\nExplanation\nNumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]);\nnumArray.sumRange(0, 2); // return 1 ((-2) + 0 + 3)\nnumArray.sumRange(2, 5); // return -1 (3 + (-5) + 2 + (-1)) \nnumArray.sumRange(0, 5); // return -3 ((-2) + 0 + 3 + (-5) + 2 + (-1))\n\nConstraints:\n`1 <= nums.length <= 104`\n`-105 <= nums[i] <= 105`\n`0 <= left <= right < nums.length`\nAt most `104` calls will be made to `sumRange`.",
+    "starterCode": {
+      "cpp": "// Problem: Range Sum Query - Immutable\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Range Sum Query - Immutable\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expectedOutput": "15"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Height Trees",
+    "difficulty": "Medium",
+    "topic": "Breadth-first Search",
+    "description": "A tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree.\n\nGiven a tree of `n` nodes labelled from `0` to `n - 1`, and an array of `n - 1` `edges` where `edges[i] = [ai, bi]` indicates that there is an undirected edge between the two nodes `ai` and `bi` in the tree, you can choose any node of the tree as the root. When you select a node `x` as the root, the result tree has height `h`. Among all possible rooted trees, those with minimum height (i.e. `min(h)`)  are called minimum height trees (MHTs).\n\nReturn a list of all MHTs' root labels. You can return the answer in any order.\n\nThe height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.\n\n\nExample 1:\nInput: n = 4, edges = [[1,0],[1,2],[1,3]]\nOutput: [1]\nExplanation: As shown, the height of the tree is 1 when the root is the node with label 1 which is the only MHT.\n\n\nExample 2:\nInput: n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]\nOutput: [3,4]\n\nExample 3:\nInput: n = 1, edges = []\nOutput: [0]\n\nExample 4:\nInput: n = 2, edges = [[0,1]]\nOutput: [0,1]\n\nConstraints:\n`1 <= n <= 2 * 104`\n`edges.length == n - 1`\n`0 <= ai, bi < n`\n`ai != bi`\nAll the pairs `(ai, bi)` are distinct.\n\nThe given input is guaranteed to be a tree and there will be no repeated edges.",
+    "starterCode": {
+      "cpp": "// Problem: Minimum Height Trees\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Minimum Height Trees\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "4 1 0 1 2 1 3",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "6 3 0 3 1 3 2 3 4 5 4",
+        "expectedOutput": "3 4"
+      },
+      {
+        "input": "1",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "2 0 1",
+        "expectedOutput": "0 1"
+      }
+    ]
+  },
+  {
+    "title": "Count of Smaller Numbers After Self",
+    "difficulty": "Hard",
+    "topic": "Binary Search",
+    "description": "You are given an integer array `nums` and you have to return a new `counts` array. The `counts` array has the property where `counts[i]` is the number of smaller elements to the right of `nums[i]`.\n\n\nExample 1:\nInput: nums = [5,2,6,1]\nOutput: [2,1,1,0]\nExplanation:\nTo the right of 5 there are 2 smaller elements (2 and 1).\n\nTo the right of 2 there is only 1 smaller element (1).\n\nTo the right of 6 there is 1 smaller element (1).\n\nTo the right of 1 there is 0 smaller element.\n\n\nExample 2:\nInput: nums = [-1]\nOutput: [0]\n\nExample 3:\nInput: nums = [-1,-1]\nOutput: [0,0]\n\nConstraints:\n`1 <= nums.length <= 105`\n`-104 <= nums[i] <= 104`",
+    "starterCode": {
+      "cpp": "// Problem: Count of Smaller Numbers After Self\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Count of Smaller Numbers After Self\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "5 2 6 1",
+        "expectedOutput": "2 1 1 0"
+      },
+      {
+        "input": "-1",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "-1 -1",
+        "expectedOutput": "0 0"
+      }
+    ]
+  },
+  {
+    "title": "Create Maximum Number",
+    "difficulty": "Hard",
+    "topic": "Dynamic Programming",
+    "description": "You are given two integer arrays `nums1` and `nums2` of lengths `m` and `n` respectively. `nums1` and `nums2` represent the digits of two numbers. You are also given an integer `k`.\n\nCreate the maximum number of length `k <= m + n` from digits of the two numbers. The relative order of the digits from the same array must be preserved.\n\nReturn an array of the `k` digits representing the answer.\n\n\nExample 1:\nInput: nums1 = [3,4,6,5], nums2 = [9,1,2,5,8,3], k = 5\nOutput: [9,8,6,5,3]\n\nExample 2:\nInput: nums1 = [6,7], nums2 = [6,0,4], k = 5\nOutput: [6,7,6,0,4]\n\nExample 3:\nInput: nums1 = [3,9], nums2 = [8,9], k = 3\nOutput: [9,8,9]\n\nConstraints:\n`m == nums1.length`\n`n == nums2.length`\n`1 <= m, n <= 500`\n`0 <= nums1[i], nums2[i] <= 9`\n`1 <= k <= m + n`\nFollow up: Try to optimize your time and space complexity.",
+    "starterCode": {
+      "cpp": "// Problem: Create Maximum Number\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Create Maximum Number\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "3 4 6 5 9 1 2 5 8 3 5",
+        "expectedOutput": "9 8 6 5 3"
+      },
+      {
+        "input": "6 7 6 0 4 5",
+        "expectedOutput": "6 7 6 0 4"
+      },
+      {
+        "input": "3 9 8 9 3",
+        "expectedOutput": "9 8 9"
+      }
+    ]
+  },
+  {
+    "title": "Count of Range Sum",
+    "difficulty": "Hard",
+    "topic": "Binary Search",
+    "description": "Given an integer array `nums` and two integers `lower` and `upper`, return the number of range sums that lie in `[lower, upper]` inclusive.\n\nRange sum `S(i, j)` is defined as the sum of the elements in `nums` between indices `i` and `j` inclusive, where `i <= j`.\n\n\nExample 1:\nInput: nums = [-2,5,-1], lower = -2, upper = 2\nOutput: 3\nExplanation: The three ranges are: [0,0], [2,2], and [0,2] and their respective sums are: -2, -1, 2.\n\n\nExample 2:\nInput: nums = [0], lower = 0, upper = 0\nOutput: 1\n\nConstraints:\n`1 <= nums.length <= 104`\n`-231 <= nums[i] <= 231 - 1`\n`-3 * 104 <= lower <= upper <= 3 * 104`\nFollow up: A naive algorithm of `O(n2)` is trivial, Could you do better than that?",
+    "starterCode": {
+      "cpp": "// Problem: Count of Range Sum\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Count of Range Sum\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "-2 5 -1 -2 2",
+        "expectedOutput": "3"
+      },
+      {
+        "input": "0 0 0",
+        "expectedOutput": "1"
+      }
+    ]
+  },
+  {
+    "title": "Longest Increasing Path in a Matrix",
+    "difficulty": "Hard",
+    "topic": "Depth-first Search",
+    "description": "Given an `m x n` integers `matrix`, return the length of the longest increasing path in `matrix`.\n\nFrom each cell, you can either move in four directions: left, right, up, or down. You may not move diagonally or move outside the boundary (i.e., wrap-around is not allowed).\n\n\nExample 1:\nInput: matrix = [[9,9,4],[6,6,8],[2,1,1]]\nOutput: 4\nExplanation: The longest increasing path is `[1, 2, 6, 9]`.\n\n\nExample 2:\nInput: matrix = [[3,4,5],[3,2,6],[2,2,1]]\nOutput: 4\nExplanation: The longest increasing path is `[3, 4, 5, 6]`. Moving diagonally is not allowed.\n\n\nExample 3:\nInput: matrix = [[1]]\nOutput: 1\n\nConstraints:\n`m == matrix.length`\n`n == matrix[i].length`\n`1 <= m, n <= 200`\n`0 <= matrix[i][j] <= 231 - 1`",
+    "starterCode": {
+      "cpp": "// Problem: Longest Increasing Path in a Matrix\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Longest Increasing Path in a Matrix\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "9 9 4 6 6 8 2 1 1",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "3 4 5 3 2 6 2 2 1",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "1",
+        "expectedOutput": "1"
+      }
+    ]
+  },
+  {
+    "title": "Data Stream as Disjoint Intervals",
+    "difficulty": "Hard",
+    "topic": "Binary Search",
+    "description": "Given a data stream input of non-negative integers `a1, a2, ..., an`, summarize the numbers seen so far as a list of disjoint intervals.\n\nImplement the `SummaryRanges` class:\n`SummaryRanges()` Initializes the object with an empty stream.\n\n`void addNum(int val)` Adds the integer `val` to the stream.\n\n`int[][] getIntervals()` Returns a summary of the integers in the stream currently as a list of disjoint intervals `[starti, endi]`.\n\n\nExample 1:\nInput\n[\"SummaryRanges\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\", \"addNum\", \"getIntervals\"]\n[[], [1], [], [3], [], [7], [], [2], [], [6], []]\nOutput\n[null, null, [[1, 1]], null, [[1, 1], [3, 3]], null, [[1, 1], [3, 3], [7, 7]], null, [[1, 3], [7, 7]], null, [[1, 3], [6, 7]]]\nExplanation\nSummaryRanges summaryRanges = new SummaryRanges();\nsummaryRanges.addNum(1);      // arr = [1]\nsummaryRanges.getIntervals(); // return [[1, 1]]\nsummaryRanges.addNum(3);      // arr = [1, 3]\nsummaryRanges.getIntervals(); // return [[1, 1], [3, 3]]\nsummaryRanges.addNum(7);      // arr = [1, 3, 7]\nsummaryRanges.getIntervals(); // return [[1, 1], [3, 3], [7, 7]]\nsummaryRanges.addNum(2);      // arr = [1, 2, 3, 7]\nsummaryRanges.getIntervals(); // return [[1, 3], [7, 7]]\nsummaryRanges.addNum(6);      // arr = [1, 2, 3, 6, 7]\nsummaryRanges.getIntervals(); // return [[1, 3], [6, 7]]\n\nConstraints:\n`0 <= val <= 104`\nAt most `3 * 104` calls will be made to `addNum` and `getIntervals`.\n\nFollow up: What if there are lots of merges and the number of disjoint intervals is small compared to the size of the data stream?",
+    "starterCode": {
+      "cpp": "// Problem: Data Stream as Disjoint Intervals\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Data Stream as Disjoint Intervals\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expectedOutput": "15"
+      }
+    ]
+  },
+  {
+    "title": "Russian Doll Envelopes",
+    "difficulty": "Hard",
+    "topic": "Binary Search",
+    "description": "You are given a 2D array of integers `envelopes` where `envelopes[i] = [wi, hi]` represents the width and the height of an envelope.\n\nOne envelope can fit into another if and only if both the width and height of one envelope are greater than the other envelope's width and height.\n\nReturn the maximum number of envelopes you can Russian doll (i.e., put one inside the other).\n\nNote: You cannot rotate an envelope.\n\n\nExample 1:\nInput: envelopes = [[5,4],[6,4],[6,7],[2,3]]\nOutput: 3\nExplanation: The maximum number of envelopes you can Russian doll is `3` ([2,3] => [5,4] => [6,7]).\n\n\nExample 2:\nInput: envelopes = [[1,1],[1,1],[1,1]]\nOutput: 1\n\nConstraints:\n`1 <= envelopes.length <= 5000`\n`envelopes[i].length == 2`\n`1 <= wi, hi <= 104`",
+    "starterCode": {
+      "cpp": "// Problem: Russian Doll Envelopes\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Russian Doll Envelopes\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "5 4 6 4 6 7 2 3",
+        "expectedOutput": "3"
+      },
+      {
+        "input": "1 1 1 1 1 1",
+        "expectedOutput": "1"
+      }
+    ]
+  },
+  {
+    "title": "Guess Number Higher or Lower",
+    "difficulty": "Easy",
+    "topic": "Binary Search",
+    "description": "We are playing the Guess Game. The game is as follows:\nI pick a number from `1` to `n`. You have to guess which number I picked.\n\nEvery time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.\n\nYou call a pre-defined API `int guess(int num)`, which returns 3 possible results:\n`-1`: The number I picked is lower than your guess (i.e. `pick < num`).\n\n`1`: The number I picked is higher than your guess (i.e. `pick > num`).\n\n`0`: The number I picked is equal to your guess (i.e. `pick == num`).\n\nReturn the number that I picked.\n\n\nExample 1:\nInput: n = 10, pick = 6\nOutput: 6\n\nExample 2:\nInput: n = 1, pick = 1\nOutput: 1\n\nExample 3:\nInput: n = 2, pick = 1\nOutput: 1\n\nExample 4:\nInput: n = 2, pick = 2\nOutput: 2\n\nConstraints:\n`1 <= n <= 231 - 1`\n`1 <= pick <= n`",
+    "starterCode": {
+      "cpp": "// Problem: Guess Number Higher or Lower\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Guess Number Higher or Lower\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "10 6",
+        "expectedOutput": "6"
+      },
+      {
+        "input": "1 1",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "2 1",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "2 2",
+        "expectedOutput": "2"
+      }
+    ]
+  },
+  {
+    "title": "Ransom Note",
+    "difficulty": "Easy",
+    "topic": "String",
+    "description": "Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.\n\nEach letter in the magazine string can only be used once in your ransom note.\n\n\nExample 1:\nInput: ransomNote = \"a\", magazine = \"b\"\nOutput: false\n\nExample 2:\nInput: ransomNote = \"aa\", magazine = \"ab\"\nOutput: false\n\nExample 3:\nInput: ransomNote = \"aa\", magazine = \"aab\"\nOutput: true\n\nConstraints:\nYou may assume that both strings contain only lowercase letters.",
+    "starterCode": {
+      "cpp": "// Problem: Ransom Note\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Ransom Note\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "a b",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "aa ab",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "aa aab",
+        "expectedOutput": "true"
+      }
+    ]
+  },
+  {
+    "title": "Is Subsequence",
+    "difficulty": "Easy",
+    "topic": "Binary Search",
+    "description": "Given two strings `s` and `t`, check if `s` is a subsequence of `t`.\n\nA subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not).\n\n\nExample 1:\nInput: s = \"abc\", t = \"ahbgdc\"\nOutput: true\n\nExample 2:\nInput: s = \"axc\", t = \"ahbgdc\"\nOutput: false\n\nConstraints:\n`0 <= s.length <= 100`\n`0 <= t.length <= 104`\n`s` and `t` consist only of lowercase English letters.\n\nFollow up: If there are lots of incoming `s`, say `s1, s2, ..., sk` where `k >= 109`, and you want to check one by one to see if `t` has its subsequence. In this scenario, how would you change your code?",
+    "starterCode": {
+      "cpp": "// Problem: Is Subsequence\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Is Subsequence\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "abc ahbgdc",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "axc ahbgdc",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "title": "Binary Watch",
+    "difficulty": "Easy",
+    "topic": "Backtracking",
+    "description": "A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59).\n\nEach LED represents a zero or one, with the least significant bit on the right.\n\nFor example, the above binary watch reads \"3:25\".\n\nGiven a non-negative integer n which represents the number of LEDs that are currently on, return all possible times the watch could represent.\n\n\nExample:\nInput: n = 1Return: [\"1:00\", \"2:00\", \"4:00\", \"8:00\", \"0:01\", \"0:02\", \"0:04\", \"0:08\", \"0:16\", \"0:32\"]\nNote:\nThe order of output does not matter.\n\nThe hour must not contain a leading zero, for example \"01:00\" is not valid, it should be \"1:00\".\n\nThe minute must be consist of two digits and may contain a leading zero, for example \"10:2\" is not valid, it should be \"10:02\".",
+    "starterCode": {
+      "cpp": "// Problem: Binary Watch\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Binary Watch\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expectedOutput": "15"
+      }
+    ]
+  },
+  {
+    "title": "Frog Jump",
+    "difficulty": "Hard",
+    "topic": "Dynamic Programming",
+    "description": "A frog is crossing a river. The river is divided into some number of units, and at each unit, there may or may not exist a stone. The frog can jump on a stone, but it must not jump into the water.\n\nGiven a list of `stones`' positions (in units) in sorted ascending order, determine if the frog can cross the river by landing on the last stone. Initially, the frog is on the first stone and assumes the first jump must be `1` unit.\n\nIf the frog's last jump was `k` units, its next jump must be either `k - 1`, `k`, or `k + 1` units. The frog can only jump in the forward direction.\n\n\nExample 1:\nInput: stones = [0,1,3,5,6,8,12,17]\nOutput: true\nExplanation: The frog can jump to the last stone by jumping 1 unit to the 2nd stone, then 2 units to the 3rd stone, then 2 units to the 4th stone, then 3 units to the 6th stone, 4 units to the 7th stone, and 5 units to the 8th stone.\n\n\nExample 2:\nInput: stones = [0,1,2,3,4,8,9,11]\nOutput: false\nExplanation: There is no way to jump to the last stone as the gap between the 5th and 6th stone is too large.\n\n\nConstraints:\n`2 <= stones.length <= 2000`\n`0 <= stones[i] <= 231 - 1`\n`stones[0] == 0`",
+    "starterCode": {
+      "cpp": "// Problem: Frog Jump\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Frog Jump\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "0 1 3 5 6 8 12 17",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "0 1 2 3 4 8 9 11",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "title": "Add Strings",
+    "difficulty": "Easy",
+    "topic": "String",
+    "description": "Given two non-negative integers, `num1` and `num2` represented as string, return the sum of `num1` and `num2` as a string.\n\n\nExample 1:\nInput: num1 = \"11\", num2 = \"123\"\nOutput: \"134\"\n\nExample 2:\nInput: num1 = \"456\", num2 = \"77\"\nOutput: \"533\"\n\nExample 3:\nInput: num1 = \"0\", num2 = \"0\"\nOutput: \"0\"\n\nConstraints:\n`1 <= num1.length, num2.length <= 104`\n`num1` and `num2` consist of only digits.\n\n`num1` and `num2` don't have any leading zeros except for the zero itself.\n\nFollow up: Could you solve it without using any built-in `BigInteger` library or converting the inputs to integer directly?",
+    "starterCode": {
+      "cpp": "// Problem: Add Strings\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Add Strings\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "11 123",
+        "expectedOutput": "134"
+      },
+      {
+        "input": "456 77",
+        "expectedOutput": "533"
+      },
+      {
+        "input": "0 0",
+        "expectedOutput": "0"
+      }
+    ]
+  },
+  {
+    "title": "Zuma Game",
+    "difficulty": "Hard",
+    "topic": "Depth-first Search",
+    "description": "Think about Zuma Game. You have a row of balls on the table, colored red(R), yellow(Y), blue(B), green(G), and white(W). You also have several balls in your hand.\n\nEach time, you may choose a ball in your hand, and insert it into the row (including the leftmost place and rightmost place). Then, if there is a group of 3 or more balls in the same color touching, remove these balls. Keep doing this until no more balls can be removed.\n\nFind the minimal balls you have to insert to remove all the balls on the table. If you cannot remove all the balls, output -1.\n\n\nExample 1:\nInput: board = \"WRRBBW\", hand = \"RB\"\nOutput: -1\nExplanation: WRRBBW -> WRR[R]BBW -> WBBW -> WBB[B]W -> WW\n\nExample 2:\nInput: board = \"WWRRBBWW\", hand = \"WRBRW\"\nOutput: 2\nExplanation: WWRRBBWW -> WWRR[R]BBWW -> WWBBWW -> WWBB[B]WW -> WWWW -> empty\n\nExample 3:\nInput: board = \"G\", hand = \"GGGGG\"\nOutput: 2\nExplanation: G -> G[G] -> GG[G] -> empty \n\nExample 4:\nInput: board = \"RBYYBBRRB\", hand = \"YRBGB\"\nOutput: 3\nExplanation: RBYYBBRRB -> RBYY[Y]BBRRB -> RBBBRRB -> RRRB -> B -> B[B] -> BB[B] -> empty \n\nConstraints:\nYou may assume that the initial row of balls on the table won’t have any 3 or more consecutive balls with the same color.\n\n`1 <= board.length <= 16`\n`1 <= hand.length <= 5`\nBoth input strings will be non-empty and only contain characters 'R','Y','B','G','W'.",
+    "starterCode": {
+      "cpp": "// Problem: Zuma Game\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Zuma Game\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "WRRBBW RB",
+        "expectedOutput": "-1"
+      },
+      {
+        "input": "WWRRBBWW WRBRW",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "G GGGGG",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "RBYYBBRRB YRBGB",
+        "expectedOutput": "3"
+      }
+    ]
+  },
+  {
+    "title": "Next Greater Element I",
+    "difficulty": "Easy",
+    "topic": "Stack",
+    "description": "You are given two integer arrays `nums1` and `nums2` both of unique elements, where `nums1` is a subset of `nums2`.\n\nFind all the next greater numbers for `nums1`'s elements in the corresponding places of `nums2`.\n\nThe Next Greater Number of a number `x` in `nums1` is the first greater number to its right in `nums2`. If it does not exist, return `-1` for this number.\n\n\nExample 1:\nInput: nums1 = [4,1,2], nums2 = [1,3,4,2]\nOutput: [-1,3,-1]\nExplanation:\nFor number 4 in the first array, you cannot find the next greater number for it in the second array, so output -1.\n\nFor number 1 in the first array, the next greater number for it in the second array is 3.\n\nFor number 2 in the first array, there is no next greater number for it in the second array, so output -1.\n\n\nExample 2:\nInput: nums1 = [2,4], nums2 = [1,2,3,4]\nOutput: [3,-1]\nExplanation:\nFor number 2 in the first array, the next greater number for it in the second array is 3.\n\nFor number 4 in the first array, there is no next greater number for it in the second array, so output -1.\n\n\nConstraints:\n`1 <= nums1.length <= nums2.length <= 1000`\n`0 <= nums1[i], nums2[i] <= 104`\nAll integers in `nums1` and `nums2` are unique.\n\nAll the integers of `nums1` also appear in `nums2`.\n\nFollow up: Could you find an `O(nums1.length + nums2.length)` solution?",
+    "starterCode": {
+      "cpp": "// Problem: Next Greater Element I\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Next Greater Element I\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "4 1 2 1 3 4 2",
+        "expectedOutput": "-1 3 -1"
+      },
+      {
+        "input": "2 4 1 2 3 4",
+        "expectedOutput": "3 -1"
+      }
+    ]
+  },
+  {
+    "title": "Cut Off Trees for Golf Event",
+    "difficulty": "Hard",
+    "topic": "Breadth-first Search",
+    "description": "You are asked to cut off all the trees in a forest for a golf event. The forest is represented as an `m x n` matrix. In this matrix:\n`0` means the cell cannot be walked through.\n\n`1` represents an empty cell that can be walked through.\n\nA number greater than `1` represents a tree in a cell that can be walked through, and this number is the tree's height.\n\nIn one step, you can walk in any of the four directions: north, east, south, and west. If you are standing in a cell with a tree, you can choose whether to cut it off.\n\nYou must cut off the trees in order from shortest to tallest. When you cut off a tree, the value at its cell becomes `1` (an empty cell).\n\nStarting from the point `(0, 0)`, return the minimum steps you need to walk to cut off all the trees. If you cannot cut off all the trees, return `-1`.\n\nYou are guaranteed that no two trees have the same height, and there is at least one tree needs to be cut off.\n\n\nExample 1:\nInput: forest = [[1,2,3],[0,0,4],[7,6,5]]\nOutput: 6\nExplanation: Following the path above allows you to cut off the trees from shortest to tallest in 6 steps.\n\n\nExample 2:\nInput: forest = [[1,2,3],[0,0,0],[7,6,5]]\nOutput: -1\nExplanation: The trees in the bottom row cannot be accessed as the middle row is blocked.\n\n\nExample 3:\nInput: forest = [[2,3,4],[0,0,5],[8,7,6]]\nOutput: 6\n\nExplanation: You can follow the same path as Example 1 to cut off all the trees.\n\nNote that you can cut off the first tree at (0, 0) before making any steps.\n\n\nConstraints:\n`m == forest.length`\n`n == forest[i].length`\n`1 <= m, n <= 50`\n`0 <= forest[i][j] <= 109`",
+    "starterCode": {
+      "cpp": "// Problem: Cut Off Trees for Golf Event\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Cut Off Trees for Golf Event\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "1 2 3 0 0 4 7 6 5",
+        "expectedOutput": "6"
+      },
+      {
+        "input": "1 2 3 0 0 0 7 6 5",
+        "expectedOutput": "-1"
+      },
+      {
+        "input": "2 3 4 0 0 5 8 7 6",
+        "expectedOutput": "6"
+      }
+    ]
+  },
+  {
+    "title": "24 Game",
+    "difficulty": "Hard",
+    "topic": "Depth-first Search",
+    "description": "You have 4 cards each containing a number from 1 to 9.  You need to judge whether they could operated through `*`, `/`, `+`, `-`, `(`, `)` to get the value of 24.\n\n\nExample 1:\nInput: [4, 1, 8, 7]\nOutput: True\nExplanation: (8-4) * (7-1) = 24\n\nExample 2:\nInput: [1, 2, 1, 2]\nOutput: False\nNote:\nThe division operator `/` represents real division, not integer division.  For example, 4 / (1 - 2/3) = 12.\n\nEvery operation done is between two numbers.  In particular, we cannot use `-` as a unary operator.  For example, with `[1, 1, 1, 1]` as input, the expression `-1 - 1 - 1 - 1` is not allowed.\n\nYou cannot concatenate numbers together.  For example, if the input is `[1, 2, 1, 2]`, we cannot write this as 12 + 12.",
+    "starterCode": {
+      "cpp": "// Problem: 24 Game\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: 24 Game\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "4 1 8 7",
+        "expectedOutput": "True"
+      },
+      {
+        "input": "1 2 1 2",
+        "expectedOutput": "False"
+      }
+    ]
+  },
+  {
+    "title": "Baseball Game",
+    "difficulty": "Easy",
+    "topic": "Stack",
+    "description": "You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds' scores.\n\nAt the beginning of the game, you start with an empty record. You are given a list of strings `ops`, where `ops[i]` is the `ith` operation you must apply to the record and is one of the following:\nAn integer `x` - Record a new score of `x`.\n\n`\"+\"` - Record a new score that is the sum of the previous two scores. It is guaranteed there will always be two previous scores.\n\n`\"D\"` - Record a new score that is double the previous score. It is guaranteed there will always be a previous score.\n\n`\"C\"` - Invalidate the previous score, removing it from the record. It is guaranteed there will always be a previous score.\n\nReturn the sum of all the scores on the record.\n\n\nExample 1:\nInput: ops = [\"5\",\"2\",\"C\",\"D\",\"+\"]\nOutput: 30\nExplanation:\n\"5\" - Add 5 to the record, record is now [5].\n\n\"2\" - Add 2 to the record, record is now [5, 2].\n\n\"C\" - Invalidate and remove the previous score, record is now [5].\n\n\"D\" - Add 2 * 5 = 10 to the record, record is now [5, 10].\n\n\"+\" - Add 5 + 10 = 15 to the record, record is now [5, 10, 15].\n\nThe total sum is 5 + 10 + 15 = 30.\n\n\nExample 2:\nInput: ops = [\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\"]\nOutput: 27\nExplanation:\n\"5\" - Add 5 to the record, record is now [5].\n\n\"-2\" - Add -2 to the record, record is now [5, -2].\n\n\"4\" - Add 4 to the record, record is now [5, -2, 4].\n\n\"C\" - Invalidate and remove the previous score, record is now [5, -2].\n\n\"D\" - Add 2 * -2 = -4 to the record, record is now [5, -2, -4].\n\n\"9\" - Add 9 to the record, record is now [5, -2, -4, 9].\n\n\"+\" - Add -4 + 9 = 5 to the record, record is now [5, -2, -4, 9, 5].\n\n\"+\" - Add 9 + 5 = 14 to the record, record is now [5, -2, -4, 9, 5, 14].\n\nThe total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.\n\n\nExample 3:\nInput: ops = [\"1\"]\nOutput: 1\n\nConstraints:\n`1 <= ops.length <= 1000`\n`ops[i]` is `\"C\"`, `\"D\"`, `\"+\"`, or a string representing an integer in the range `[-3 * 104, 3 * 104]`.\n\nFor operation `\"+\"`, there will always be at least two previous scores on the record.\n\nFor operations `\"C\"` and `\"D\"`, there will always be at least one previous score on the record.",
+    "starterCode": {
+      "cpp": "// Problem: Baseball Game\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Baseball Game\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "5 2 C D +",
+        "expectedOutput": "30"
+      },
+      {
+        "input": "5 -2 4 C D 9 + +",
+        "expectedOutput": "27"
+      },
+      {
+        "input": "1",
+        "expectedOutput": "1"
+      }
+    ]
+  },
+  {
+    "title": "Redundant Connection II",
+    "difficulty": "Hard",
+    "topic": "Tree",
+    "description": "In this problem, a rooted tree is a directed graph such that, there is exactly one node (the root) for which all other nodes are descendants of this node, plus every node has exactly one parent, except for the root node which has no parents.\n\nThe given input is a directed graph that started as a rooted tree with `n` nodes (with distinct values from `1` to `n`), with one additional directed edge added. The added edge has two different vertices chosen from `1` to `n`, and was not an edge that already existed.\n\nThe resulting graph is given as a 2D-array of `edges`. Each element of `edges` is a pair `[ui, vi]` that represents a directed edge connecting nodes `ui` and `vi`, where `ui` is a parent of child `vi`.\n\nReturn an edge that can be removed so that the resulting graph is a rooted tree of `n` nodes. If there are multiple answers, return the answer that occurs last in the given 2D-array.\n\n\nExample 1:\nInput: edges = [[1,2],[1,3],[2,3]]\nOutput: [2,3]\n\nExample 2:\nInput: edges = [[1,2],[2,3],[3,4],[4,1],[1,5]]\nOutput: [4,1]\n\nConstraints:\n`n == edges.length`\n`3 <= n <= 1000`\n`edges[i].length == 2`\n`1 <= ui, vi <= n`",
+    "starterCode": {
+      "cpp": "// Problem: Redundant Connection II\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Redundant Connection II\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "1 2 1 3 2 3",
+        "expectedOutput": "2 3"
+      },
+      {
+        "input": "1 2 2 3 3 4 4 1 1 5",
+        "expectedOutput": "4 1"
+      }
+    ]
+  },
+  {
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "topic": "Binary Search",
+    "description": "Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`.\n\n\nExample 1:\nInput: nums = [-1,0,3,5,9,12], target = 9\nOutput: 4\nExplanation: 9 exists in nums and its index is 4\n\nExample 2:\nInput: nums = [-1,0,3,5,9,12], target = 2\nOutput: -1\nExplanation: 2 does not exist in nums so return -1\n\nConstraints:\n`1 <= nums.length <= 104`\n`-9999 <= nums[i], target <= 9999`\nAll the integers in `nums` are unique.\n\n`nums` is sorted in an ascending order.",
+    "starterCode": {
+      "cpp": "// Problem: Binary Search\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Binary Search\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "-1 0 3 5 9 12 9",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "-1 0 3 5 9 12 2",
+        "expectedOutput": "-1"
+      }
+    ]
+  },
+  {
+    "title": "Flood Fill",
+    "difficulty": "Easy",
+    "topic": "Depth-first Search",
+    "description": "An `image` is represented by a 2-D array of integers, each integer representing the pixel value of the image (from 0 to 65535).\n\nGiven a coordinate `(sr, sc)` representing the starting pixel (row and column) of the flood fill, and a pixel value `newColor`, \"flood fill\" the image.\n\nTo perform a \"flood fill\", consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color as the starting pixel), and so on.  Replace the color of all of the aforementioned pixels with the newColor.\n\nAt the end, return the modified image.\n\n\nExample 1:\nInput: \nimage = [[1,1,1],[1,1,0],[1,0,1]]\nsr = 1, sc = 1, newColor = 2\nOutput: [[2,2,2],[2,2,0],[2,0,1]]\nExplanation: \nFrom the center of the image (with position (sr, sc) = (1, 1)), all pixels connected \nby a path of the same color as the starting pixel are colored with the new color.\n\nNote the bottom corner is not colored 2, because it is not 4-directionally connected\nto the starting pixel.\n\nNote:\nThe length of `image` and `image[0]` will be in the range `[1, 50]`.\n\nThe given starting pixel will satisfy `0 <= sr < image.length` and `0 <= sc < image[0].length`.\n\nThe value of each color in `image[i][j]` and `newColor` will be an integer in `[0, 65535]`.",
+    "starterCode": {
+      "cpp": "// Problem: Flood Fill\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Flood Fill\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "1 1 1 1 1 0 1 0 1",
+        "expectedOutput": "2 2 2 2 2 0 2 0 1"
+      }
+    ]
+  },
+  {
+    "title": "Find Smallest Letter Greater Than Target",
+    "difficulty": "Easy",
+    "topic": "Binary Search",
+    "description": "Given a list of sorted characters `letters` containing only lowercase letters, and given a target letter `target`, find the smallest element in the list that is larger than the given target.\n\nLetters also wrap around.  For example, if the target is `target = 'z'` and `letters = ['a', 'b']`, the answer is `'a'`.\n\n\nExamples:\nInput:\nletters = [\"c\", \"f\", \"j\"]\ntarget = \"a\"\nOutput: \"c\"\nInput:\nletters = [\"c\", \"f\", \"j\"]\ntarget = \"c\"\nOutput: \"f\"\nInput:\nletters = [\"c\", \"f\", \"j\"]\ntarget = \"d\"\nOutput: \"f\"\nInput:\nletters = [\"c\", \"f\", \"j\"]\ntarget = \"g\"\nOutput: \"j\"\nInput:\nletters = [\"c\", \"f\", \"j\"]\ntarget = \"j\"\nOutput: \"c\"\nInput:\nletters = [\"c\", \"f\", \"j\"]\ntarget = \"k\"\nOutput: \"c\"\nNote:\n`letters` has a length in range `[2, 10000]`.\n\n`letters` consists of lowercase letters, and contains at least 2 unique letters.\n\n`target` is a lowercase letter.",
+    "starterCode": {
+      "cpp": "// Problem: Find Smallest Letter Greater Than Target\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Find Smallest Letter Greater Than Target\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "c f j",
+        "expectedOutput": "c"
+      },
+      {
+        "input": "c f j",
+        "expectedOutput": "f"
+      },
+      {
+        "input": "c f j",
+        "expectedOutput": "f"
+      },
+      {
+        "input": "c f j",
+        "expectedOutput": "j"
+      },
+      {
+        "input": "c f j",
+        "expectedOutput": "c"
+      },
+      {
+        "input": "c f j",
+        "expectedOutput": "c"
+      }
+    ]
+  },
+  {
+    "title": "Contain Virus",
+    "difficulty": "Hard",
+    "topic": "Depth-first Search",
+    "description": "A virus is spreading rapidly, and your task is to quarantine the infected area by installing walls.\n\nThe world is modeled as a 2-D array of cells, where `0` represents uninfected cells, and `1` represents cells contaminated with the virus.  A wall (and only one wall) can be installed between any two 4-directionally adjacent cells, on the shared boundary.\n\nEvery night, the virus spreads to all neighboring cells in all four directions unless blocked by a wall.\n\nResources are limited. Each day, you can install walls around only one region -- the affected area (continuous block of infected cells) that threatens the most uninfected cells the following night. There will never be a tie.\n\nCan you save the day? If so, what is the number of walls required? If not, and the world becomes fully infected, return the number of walls used.\n\n\nExample 1:\nInput: grid = \n[[0,1,0,0,0,0,0,1],\n [0,1,0,0,0,0,0,1],\n [0,0,0,0,0,0,0,1],\n [0,0,0,0,0,0,0,0]]\nOutput: 10\nExplanation:\nThere are 2 contaminated regions.\n\nOn the first day, add 5 walls to quarantine the viral region on the left. The board after the virus spreads is:\n[[0,1,0,0,0,0,1,1],\n [0,1,0,0,0,0,1,1],\n [0,0,0,0,0,0,1,1],\n [0,0,0,0,0,0,0,1]]\nOn the second day, add 5 walls to quarantine the viral region on the right. The virus is fully contained.\n\n\nExample 2:\nInput: grid = \n[[1,1,1],\n [1,0,1],\n [1,1,1]]\nOutput: 4\nExplanation: Even though there is only one cell saved, there are 4 walls built.\n\nNotice that walls are only built on the shared boundary of two different cells.\n\n\nExample 3:\nInput: grid = \n[[1,1,1,0,0,0,0,0,0],\n [1,0,1,0,1,1,1,1,1],\n [1,1,1,0,0,0,0,0,0]]\nOutput: 13\nExplanation: The region on the left only builds two new walls.\n\nNote:\nThe number of rows and columns of `grid` will each be in the range `[1, 50]`.\n\nEach `grid[i][j]` will be either `0` or `1`.\n\nThroughout the described process, there is always a contiguous viral region that will infect strictly more uncontaminated squares in the next round.",
+    "starterCode": {
+      "cpp": "// Problem: Contain Virus\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Contain Virus\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "",
+        "expectedOutput": "10"
+      },
+      {
+        "input": "",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "",
+        "expectedOutput": "13"
+      }
+    ]
+  },
+  {
+    "title": "Open the Lock",
+    "difficulty": "Medium",
+    "topic": "Breadth-first Search",
+    "description": "You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: `'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'`. The wheels can rotate freely and wrap around: for example we can turn `'9'` to be `'0'`, or `'0'` to be `'9'`. Each move consists of turning one wheel one slot.\n\nThe lock initially starts at `'0000'`, a string representing the state of the 4 wheels.\n\nYou are given a list of `deadends` dead ends, meaning if the lock displays any of these codes, the wheels of the lock will stop turning and you will be unable to open it.\n\nGiven a `target` representing the value of the wheels that will unlock the lock, return the minimum total number of turns required to open the lock, or -1 if it is impossible.\n\n\nExample 1:\nInput: deadends = [\"0201\",\"0101\",\"0102\",\"1212\",\"2002\"], target = \"0202\"\nOutput: 6\nExplanation:\nA sequence of valid moves would be \"0000\" -> \"1000\" -> \"1100\" -> \"1200\" -> \"1201\" -> \"1202\" -> \"0202\".\n\nNote that a sequence like \"0000\" -> \"0001\" -> \"0002\" -> \"0102\" -> \"0202\" would be invalid,\nbecause the wheels of the lock become stuck after the display becomes the dead end \"0102\".\n\n\nExample 2:\nInput: deadends = [\"8888\"], target = \"0009\"\nOutput: 1\nExplanation:\nWe can turn the last wheel in reverse to move from \"0000\" -> \"0009\".\n\n\nExample 3:\nInput: deadends = [\"8887\",\"8889\",\"8878\",\"8898\",\"8788\",\"8988\",\"7888\",\"9888\"], target = \"8888\"\nOutput: -1\nExplanation:\nWe can't reach the target without getting stuck.\n\n\nExample 4:\nInput: deadends = [\"0000\"], target = \"8888\"\nOutput: -1\n\nConstraints:\n`1 <= deadends.length <= 500`\n`deadends[i].length == 4`\n`target.length == 4`\ntarget will not be in the list `deadends`.\n\n`target` and `deadends[i]` consist of digits only.",
+    "starterCode": {
+      "cpp": "// Problem: Open the Lock\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Open the Lock\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "0201 0101 0102 1212 2002 0202",
+        "expectedOutput": "6"
+      },
+      {
+        "input": "8888 0009",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "8887 8889 8878 8898 8788 8988 7888 9888 8888",
+        "expectedOutput": "-1"
+      },
+      {
+        "input": "0000 8888",
+        "expectedOutput": "-1"
+      }
+    ]
+  },
+  {
+    "title": "Sliding Puzzle",
+    "difficulty": "Hard",
+    "topic": "Breadth-first Search",
+    "description": "On a 2x3 `board`, there are 5 tiles represented by the integers 1 through 5, and an empty square represented by 0.\n\nA move consists of choosing `0` and a 4-directionally adjacent number and swapping it.\n\nThe state of the board is solved if and only if the `board` is `[[1,2,3],[4,5,0]].`\nGiven a puzzle board, return the least number of moves required so that the state of the board is solved. If it is impossible for the state of the board to be solved, return -1.\n\n\nExamples:\nInput: board = [[1,2,3],[4,0,5]]\nOutput: 1\nExplanation: Swap the 0 and the 5 in one move.\n\nInput: board = [[1,2,3],[5,4,0]]\nOutput: -1\nExplanation: No number of moves will make the board solved.\n\nInput: board = [[4,1,2],[5,0,3]]\nOutput: 5\nExplanation: 5 is the smallest number of moves that solves the board.\n\nAn example path:\nAfter move 0: [[4,1,2],[5,0,3]]\nAfter move 1: [[4,1,2],[0,5,3]]\nAfter move 2: [[0,1,2],[4,5,3]]\nAfter move 3: [[1,0,2],[4,5,3]]\nAfter move 4: [[1,2,0],[4,5,3]]\nAfter move 5: [[1,2,3],[4,5,0]]\nInput: board = [[3,2,4],[1,5,0]]\nOutput: 14\nNote:\n`board` will be a 2 x 3 array as described above.\n\n`board[i][j]` will be a permutation of `[0, 1, 2, 3, 4, 5]`.",
+    "starterCode": {
+      "cpp": "// Problem: Sliding Puzzle\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Sliding Puzzle\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "1 2 3 4 0 5",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "1 2 3 5 4 0",
+        "expectedOutput": "-1"
+      },
+      {
+        "input": "4 1 2 5 0 3",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "3 2 4 1 5 0",
+        "expectedOutput": "14"
+      }
+    ]
+  },
+  {
+    "title": "Bus Routes",
+    "difficulty": "Hard",
+    "topic": "Breadth-first Search",
+    "description": "You are given an array `routes` representing bus routes where `routes[i]` is a bus route that the `ith` bus repeats forever.\n\nFor example, if `routes[0] = [1, 5, 7]`, this means that the `0th` bus travels in the sequence `1 -> 5 -> 7 -> 1 -> 5 -> 7 -> 1 -> ...` forever.\n\nYou will start at the bus stop `source` (You are not on any bus initially), and you want to go to the bus stop `target`. You can travel between bus stops by buses only.\n\nReturn the least number of buses you must take to travel from `source` to `target`. Return `-1` if it is not possible.\n\n\nExample 1:\nInput: routes = [[1,2,7],[3,6,7]], source = 1, target = 6\nOutput: 2\nExplanation: The best strategy is take the first bus to the bus stop 7, then take the second bus to the bus stop 6.\n\n\nExample 2:\nInput: routes = [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source = 15, target = 12\nOutput: -1\n\nConstraints:\n`1 <= routes.length <= 500`.\n\n`1 <= routes[i].length <= 105`\nAll the values of `routes[i]` are unique.\n\n`sum(routes[i].length) <= 105`\n`0 <= routes[i][j] < 106`\n`0 <= source, target < 106`",
+    "starterCode": {
+      "cpp": "// Problem: Bus Routes\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Bus Routes\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "1 2 7 3 6 7 1 6",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "7 12 4 5 15 6 15 19 9 12 13 15 12",
+        "expectedOutput": "-1"
+      }
+    ]
+  },
+  {
+    "title": "Sum of Distances in Tree",
+    "difficulty": "Hard",
+    "topic": "Tree",
+    "description": "An undirected, connected tree with `N` nodes labelled `0...N-1` and `N-1` `edges` are given.\n\nThe `i`th edge connects nodes `edges[i][0] `and` edges[i][1]` together.\n\nReturn a list `ans`, where `ans[i]` is the sum of the distances between node `i` and all other nodes.\n\n\nExample 1:\nInput: N = 6, edges = [[0,1],[0,2],[2,3],[2,4],[2,5]]\nOutput: [8,12,6,10,10,10]\nExplanation: \nHere is a diagram of the given tree:\n  0\n / \\\n1   2\n   /|\\\n  3 4 5\nWe can see that dist(0,1) + dist(0,2) + dist(0,3) + dist(0,4) + dist(0,5)\nequals 1 + 1 + 2 + 2 + 2 = 8.  Hence, answer[0] = 8, and so on.\n\nNote: `1 <= N <= 10000`",
+    "starterCode": {
+      "cpp": "// Problem: Sum of Distances in Tree\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Sum of Distances in Tree\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "6 0 1 0 2 2 3 2 4 2 5",
+        "expectedOutput": "8 12 6 10 10 10"
+      }
+    ]
+  },
+  {
+    "title": "K-Similar Strings",
+    "difficulty": "Hard",
+    "topic": "Breadth-first Search",
+    "description": "Strings `s1` and `s2` are `k`-similar (for some non-negative integer `k`) if we can swap the positions of two letters in `s1` exactly `k` times so that the resulting string equals `s2`.\n\nGiven two anagrams `s1` and `s2`, return the smallest `k` for which `s1` and `s2` are `k`-similar.\n\n\nExample 1:\nInput: s1 = \"ab\", s2 = \"ba\"\nOutput: 1\n\nExample 2:\nInput: s1 = \"abc\", s2 = \"bca\"\nOutput: 2\n\nExample 3:\nInput: s1 = \"abac\", s2 = \"baca\"\nOutput: 2\n\nExample 4:\nInput: s1 = \"aabc\", s2 = \"abca\"\nOutput: 2\n\nConstraints:\n`1 <= s1.length <= 20`\n`s2.length == s1.length`\n`s1` and `s2` contain only lowercase letters from the set `{'a', 'b', 'c', 'd', 'e', 'f'}`.\n\n`s2` is an anagram of `s1`.",
+    "starterCode": {
+      "cpp": "// Problem: K-Similar Strings\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: K-Similar Strings\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "ab ba",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "abc bca",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "abac baca",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "aabc abca",
+        "expectedOutput": "2"
+      }
+    ]
+  },
+  {
+    "title": "Snakes and Ladders",
+    "difficulty": "Medium",
+    "topic": "Breadth-first Search",
+    "description": "On an N x N `board`, the numbers from `1` to `N*N` are written boustrophedonically starting from the bottom left of the board, and alternating direction each row.  For example, for a 6 x 6 board, the numbers are written as follows:\nYou start on square `1` of the board (which is always in the last row and first column).  Each move, starting from square `x`, consists of the following:\nYou choose a destination square `S` with number `x+1`, `x+2`, `x+3`, `x+4`, `x+5`, or `x+6`, provided this number is `<= N*N`.\n\n\t\n(This choice simulates the result of a standard 6-sided die roll: ie., there are always at most 6 destinations, regardless of the size of the board.)\nIf `S` has a snake or ladder, you move to the destination of that snake or ladder.  Otherwise, you move to `S`.\n\nA board square on row `r` and column `c` has a \"snake or ladder\" if `board[r][c] != -1`.  The destination of that snake or ladder is `board[r][c]`.\n\nNote that you only take a snake or ladder at most once per move: if the destination to a snake or ladder is the start of another snake or ladder, you do not continue moving.  (For example, if the board is `[[4,-1],[-1,3]]`, and on the first move your destination square is `2`, then you finish your first move at `3`, because you do not continue moving to `4`.)\nReturn the least number of moves required to reach square N*N.  If it is not possible, return `-1`.\n\n\nExample 1:\nInput: [\n[-1,-1,-1,-1,-1,-1],\n[-1,-1,-1,-1,-1,-1],\n[-1,-1,-1,-1,-1,-1],\n[-1,35,-1,-1,13,-1],\n[-1,-1,-1,-1,-1,-1],\n[-1,15,-1,-1,-1,-1]]\nOutput: 4\nExplanation: \nAt the beginning, you start at square 1 [at row 5, column 0].\n\nYou decide to move to square 2, and must take the ladder to square 15.\n\nYou then decide to move to square 17 (row 3, column 5), and must take the snake to square 13.\n\nYou then decide to move to square 14, and must take the ladder to square 35.\n\nYou then decide to move to square 36, ending the game.\n\nIt can be shown that you need at least 4 moves to reach the N*N-th square, so the answer is 4.\n\nNote:\n`2 <= board.length = board[0].length <= 20`\n`board[i][j]` is between `1` and `N*N` or is equal to `-1`.\n\nThe board square with number `1` has no snake or ladder.\n\nThe board square with number `N*N` has no snake or ladder.",
+    "starterCode": {
+      "cpp": "// Problem: Snakes and Ladders\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Snakes and Ladders\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "",
+        "expectedOutput": "4"
+      }
+    ]
+  },
+  {
+    "title": "Unique Paths III",
+    "difficulty": "Hard",
+    "topic": "Backtracking",
+    "description": "On a 2-dimensional `grid`, there are 4 types of squares:\n`1` represents the starting square.  There is exactly one starting square.\n\n`2` represents the ending square.  There is exactly one ending square.\n\n`0` represents empty squares we can walk over.\n\n`-1` represents obstacles that we cannot walk over.\n\nReturn the number of 4-directional walks from the starting square to the ending square, that walk over every non-obstacle square exactly once.\n\n\nExample 1:\nInput: [[1,0,0,0],[0,0,0,0],[0,0,2,-1]]\nOutput: 2\nExplanation: We have the following two paths: \n1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2)\n2. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2)\n\nExample 2:\nInput: [[1,0,0,0],[0,0,0,0],[0,0,0,2]]\nOutput: 4\nExplanation: We have the following four paths: \n1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2),(2,3)\n2. (0,0),(0,1),(1,1),(1,0),(2,0),(2,1),(2,2),(1,2),(0,2),(0,3),(1,3),(2,3)\n3. (0,0),(1,0),(2,0),(2,1),(2,2),(1,2),(1,1),(0,1),(0,2),(0,3),(1,3),(2,3)\n4. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2),(2,3)\n\nExample 3:\nInput: [[0,1],[2,0]]\nOutput: 0\nExplanation: \nThere is no path that walks over every empty square exactly once.\n\nNote that the starting and ending square can be anywhere in the grid.\n\nNote:\n`1 <= grid.length * grid[0].length <= 20`",
+    "starterCode": {
+      "cpp": "// Problem: Unique Paths III\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Unique Paths III\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "1 0 0 0 0 0 0 0 0 0 2 -1",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "1 0 0 0 0 0 0 0 0 0 0 2",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "0 1 2 0",
+        "expectedOutput": "0"
+      }
+    ]
+  },
+  {
+    "title": "Rotting Oranges",
+    "difficulty": "Medium",
+    "topic": "Breadth-first Search",
+    "description": "You are given an `m x n` `grid` where each cell can have one of three values:\n`0` representing an empty cell,\n`1` representing a fresh orange, or\n`2` representing a rotten orange.\n\nEvery minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.\n\nReturn the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return `-1`.\n\n\nExample 1:\nInput: grid = [[2,1,1],[1,1,0],[0,1,1]]\nOutput: 4\n\nExample 2:\nInput: grid = [[2,1,1],[0,1,1],[1,0,1]]\nOutput: -1\nExplanation: The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.\n\n\nExample 3:\nInput: grid = [[0,2]]\nOutput: 0\nExplanation: Since there are already no fresh oranges at minute 0, the answer is just 0.\n\n\nConstraints:\n`m == grid.length`\n`n == grid[i].length`\n`1 <= m, n <= 10`\n`grid[i][j]` is `0`, `1`, or `2`.",
+    "starterCode": {
+      "cpp": "// Problem: Rotting Oranges\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Rotting Oranges\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "2 1 1 1 1 0 0 1 1",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "2 1 1 0 1 1 1 0 1",
+        "expectedOutput": "-1"
+      },
+      {
+        "input": "0 2",
+        "expectedOutput": "0"
+      }
+    ]
+  },
+  {
+    "title": "Shortest Path in Binary Matrix",
+    "difficulty": "Medium",
+    "topic": "Breadth-first Search",
+    "description": "Given an `n x n` binary matrix `grid`, return the length of the shortest clear path in the matrix. If there is no clear path, return `-1`.\n\nA clear path in a binary matrix is a path from the top-left cell (i.e., `(0, 0)`) to the bottom-right cell (i.e., `(n - 1, n - 1)`) such that:\nAll the visited cells of the path are `0`.\n\nAll the adjacent cells of the path are 8-directionally connected (i.e., they are different and they share an edge or a corner).\n\nThe length of a clear path is the number of visited cells of this path.\n\n\nExample 1:\nInput: grid = [[0,1],[1,0]]\nOutput: 2\n\nExample 2:\nInput: grid = [[0,0,0],[1,1,0],[1,1,0]]\nOutput: 4\n\nExample 3:\nInput: grid = [[1,0,0],[1,1,0],[1,1,0]]\nOutput: -1\n\nConstraints:\n`n == grid.length`\n`n == grid[i].length`\n`1 <= n <= 100`\n`grid[i][j] is 0 or 1`",
+    "starterCode": {
+      "cpp": "// Problem: Shortest Path in Binary Matrix\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Shortest Path in Binary Matrix\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "0 1 1 0",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "0 0 0 1 1 0 1 1 0",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "1 0 0 1 1 0 1 1 0",
+        "expectedOutput": "-1"
+      }
+    ]
+  },
+  {
+    "title": "Count Subtrees With Max Distance Between Cities",
+    "difficulty": "Hard",
+    "topic": "Backtracking",
+    "description": "There are `n` cities numbered from `1` to `n`. You are given an array `edges` of size `n-1`, where `edges[i] = [ui, vi]` represents a bidirectional edge between cities `ui` and `vi`. There exists a unique path between each pair of cities. In other words, the cities form a tree.\n\nA subtree is a subset of cities where every city is reachable from every other city in the subset, where the path between each pair passes through only the cities from the subset. Two subtrees are different if there is a city in one subtree that is not present in the other.\n\nFor each `d` from `1` to `n-1`, find the number of subtrees in which the maximum distance between any two cities in the subtree is equal to `d`.\n\nReturn an array of size `n-1` where the `dth` element (1-indexed) is the number of subtrees in which the maximum distance between any two cities is equal to `d`.\n\nNotice that the distance between the two cities is the number of edges in the path between them.\n\n\nExample 1:\nInput: n = 4, edges = [[1,2],[2,3],[2,4]]\nOutput: [3,4,0]\nExplanation:\nThe subtrees with subsets {1,2}, {2,3} and {2,4} have a max distance of 1.\n\nThe subtrees with subsets {1,2,3}, {1,2,4}, {2,3,4} and {1,2,3,4} have a max distance of 2.\n\nNo subtree has two nodes where the max distance between them is 3.\n\n\nExample 2:\nInput: n = 2, edges = [[1,2]]\nOutput: [1]\n\nExample 3:\nInput: n = 3, edges = [[1,2],[2,3]]\nOutput: [2,1]\n\nConstraints:\n`2 <= n <= 15`\n`edges.length == n-1`\n`edges[i].length == 2`\n`1 <= ui, vi <= n`\nAll pairs `(ui, vi)` are distinct.",
+    "starterCode": {
+      "cpp": "// Problem: Count Subtrees With Max Distance Between Cities\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Count Subtrees With Max Distance Between Cities\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "4 1 2 2 3 2 4",
+        "expectedOutput": "3 4 0"
+      },
+      {
+        "input": "2 1 2",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "3 1 2 2 3",
+        "expectedOutput": "2 1"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Adjacent Swaps for K Consecutive Ones",
+    "difficulty": "Hard",
+    "topic": "Stack",
+    "description": "You are given an integer array, `nums`, and an integer `k`. `nums` comprises of only `0`'s and `1`'s. In one move, you can choose two adjacent indices and swap their values.\n\nReturn the minimum number of moves required so that `nums` has `k` consecutive `1`'s.\n\n\nExample 1:\nInput: nums = [1,0,0,1,0,1], k = 2\nOutput: 1\nExplanation: In 1 move, nums could be [1,0,0,0,1,1] and have 2 consecutive 1's.\n\n\nExample 2:\nInput: nums = [1,0,0,0,0,0,1,1], k = 3\nOutput: 5\nExplanation: In 5 moves, the leftmost 1 can be shifted right until nums = [0,0,0,0,0,1,1,1].\n\n\nExample 3:\nInput: nums = [1,1,0,1], k = 2\nOutput: 0\nExplanation: nums already has 2 consecutive 1's.\n\n\nConstraints:\n`1 <= nums.length <= 105`\n`nums[i]` is `0` or `1`.\n\n`1 <= k <= sum(nums)`",
+    "starterCode": {
+      "cpp": "// Problem: Minimum Adjacent Swaps for K Consecutive Ones\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Minimum Adjacent Swaps for K Consecutive Ones\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "1 0 0 1 0 1 2",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "1 0 0 0 0 0 1 1 3",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "1 1 0 1 2",
+        "expectedOutput": "0"
+      }
+    ]
+  }
+]

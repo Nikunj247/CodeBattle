@@ -1,0 +1,386 @@
+[
+  {
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "Hard",
+    "topic": "Linked List",
+    "description": "Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list.",
+    "testCases": [
+      {
+        "input": "1 2 3 4 5 2",
+        "expectedOutput": "2 1 4 3 5"
+      },
+      {
+        "input": "1 2 3 4 5 3",
+        "expectedOutput": "3 2 1 4 5"
+      }
+    ]
+  },
+  {
+    "title": "Merge K Sorted Lists",
+    "difficulty": "Hard",
+    "topic": "Linked List",
+    "description": "Merge all the linked-lists into one sorted linked-list and return it.",
+    "testCases": [
+      {
+        "input": "1 4 5 1 3 4 2 6",
+        "expectedOutput": "1 1 2 3 4 4 5 6"
+      },
+      {
+        "input": "1 3 5 2 4 6",
+        "expectedOutput": "1 2 3 4 5 6"
+      }
+    ]
+  },
+  {
+    "title": "Sort List Algorithm",
+    "difficulty": "Hard",
+    "topic": "Linked List",
+    "description": "Given the head of a linked list, return the list after sorting it in ascending order. Must use O(n log n) time.",
+    "testCases": [
+      {
+        "input": "4 2 1 3",
+        "expectedOutput": "1 2 3 4"
+      },
+      {
+        "input": "-1 5 3 4 0",
+        "expectedOutput": "-1 0 3 4 5"
+      }
+    ]
+  },
+  {
+    "title": "Binary Watch Combinations",
+    "difficulty": "Easy",
+    "topic": "Backtracking",
+    "description": "Return all possible times the watch could represent given a number of turned-on LEDs.",
+    "testCases": [
+      {
+        "input": "1",
+        "expectedOutput": "0:01 0:02 0:04 0:08 0:16 0:32 1:00 2:00 4:00 8:00"
+      },
+      {
+        "input": "9",
+        "expectedOutput": "[]"
+      }
+    ]
+  },
+  {
+    "title": "Generate Subsets Basics",
+    "difficulty": "Easy",
+    "topic": "Backtracking",
+    "description": "Given an integer array nums of unique elements, return all possible subsets (the power set).",
+    "testCases": [
+      {
+        "input": "1 2",
+        "expectedOutput": "[] [1] [2] [1,2]"
+      },
+      {
+        "input": "0",
+        "expectedOutput": "[] [0]"
+      }
+    ]
+  },
+  {
+    "title": "Simple Permutations",
+    "difficulty": "Easy",
+    "topic": "Backtracking",
+    "description": "Given a string of unique characters, return all possible permutations.",
+    "testCases": [
+      {
+        "input": "a b",
+        "expectedOutput": "a b, b a"
+      },
+      {
+        "input": "x y z",
+        "expectedOutput": "x y z, x z y, y x z, y z x, z x y, z y x"
+      }
+    ]
+  },
+  {
+    "title": "Path Sum Backtrack",
+    "difficulty": "Easy",
+    "topic": "Backtracking",
+    "description": "Given a tree representation and a target sum, determine if there's a path.",
+    "testCases": [
+      {
+        "input": "1 2 3 3",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "1 2 3 5",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "title": "N-th Tribonacci Number",
+    "difficulty": "Easy",
+    "topic": "Dynamic Programming",
+    "description": "The Tribonacci sequence Tn is defined as follows: T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2. Return the value of Tn.",
+    "testCases": [
+      {
+        "input": "4",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "25",
+        "expectedOutput": "1389537"
+      }
+    ]
+  },
+  {
+    "title": "Min Cost Climbing Stairs",
+    "difficulty": "Easy",
+    "topic": "Dynamic Programming",
+    "description": "You are given an integer array cost where cost[i] is the cost of ith step on a staircase. Return the minimum cost to reach the top of the floor.",
+    "testCases": [
+      {
+        "input": "10 15 20",
+        "expectedOutput": "15"
+      },
+      {
+        "input": "1 100 1 1 1 100 1 1 100 1",
+        "expectedOutput": "6"
+      }
+    ]
+  },
+  {
+    "title": "Divisor Game",
+    "difficulty": "Easy",
+    "topic": "Dynamic Programming",
+    "description": "Alice and Bob take turns playing a game. Return true if Alice wins, assuming optimal play.",
+    "testCases": [
+      {
+        "input": "2",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "3",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "Hard",
+    "topic": "Stack",
+    "description": "Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.",
+    "testCases": [
+      {
+        "input": "2 1 5 6 2 3",
+        "expectedOutput": "10"
+      },
+      {
+        "input": "2 4",
+        "expectedOutput": "4"
+      }
+    ]
+  },
+  {
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "topic": "Stack",
+    "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+    "testCases": [
+      {
+        "input": "0 1 0 2 1 0 1 3 2 1 2 1",
+        "expectedOutput": "6"
+      },
+      {
+        "input": "4 2 0 3 2 5",
+        "expectedOutput": "9"
+      }
+    ]
+  },
+  {
+    "title": "Basic Calculator Implementation",
+    "difficulty": "Hard",
+    "topic": "Stack",
+    "description": "Given a string s representing a valid expression, implement a basic calculator to evaluate it.",
+    "testCases": [
+      {
+        "input": "1 + 1",
+        "expectedOutput": "2"
+      },
+      {
+        "input": " 2-1 + 2 ",
+        "expectedOutput": "3"
+      }
+    ]
+  },
+  {
+    "title": "Maximal Rectangle",
+    "difficulty": "Hard",
+    "topic": "Stack",
+    "description": "Given a binary matrix, find the largest rectangle containing only 1's and return its area.",
+    "testCases": [
+      {
+        "input": "1 0 1 1 1 1",
+        "expectedOutput": "4"
+      },
+      {
+        "input": "0",
+        "expectedOutput": "0"
+      }
+    ]
+  },
+  {
+    "title": "Minimum Depth of Tree",
+    "difficulty": "Easy",
+    "topic": "Breadth-first Search",
+    "description": "Given a binary tree, find its minimum depth.",
+    "testCases": [
+      {
+        "input": "3 9 20 null null 15 7",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "2 null 3 null 4 null 5 null 6",
+        "expectedOutput": "5"
+      }
+    ]
+  },
+  {
+    "title": "Average of Levels",
+    "difficulty": "Easy",
+    "topic": "Breadth-first Search",
+    "description": "Given the root of a binary tree, return the average value of the nodes on each level.",
+    "testCases": [
+      {
+        "input": "3 9 20 null null 15 7",
+        "expectedOutput": "3 14.5"
+      },
+      {
+        "input": "3 9 20 15 7",
+        "expectedOutput": "3 14.5 11"
+      }
+    ]
+  },
+  {
+    "title": "Symmetric Tree Level",
+    "difficulty": "Easy",
+    "topic": "Breadth-first Search",
+    "description": "Check if a tree is symmetric around its center.",
+    "testCases": [
+      {
+        "input": "1 2 2 3 4 4 3",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "1 2 2 null 3 null 3",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "title": "Cousins in Tree",
+    "difficulty": "Easy",
+    "topic": "Breadth-first Search",
+    "description": "Determine if two given nodes in a tree are cousins (same depth, different parents).",
+    "testCases": [
+      {
+        "input": "1 2 3 4 5",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "1 2 3 null 4 null 5",
+        "expectedOutput": "true"
+      }
+    ]
+  },
+  {
+    "title": "Find Center of Graph",
+    "difficulty": "Easy",
+    "topic": "Breadth-first Search",
+    "description": "Find the center node of a star graph.",
+    "testCases": [
+      {
+        "input": "1 2 2 3 4 2",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "1 2 5 1 1 3 1 4",
+        "expectedOutput": "1"
+      }
+    ]
+  },
+  {
+    "title": "Same Tree Check",
+    "difficulty": "Easy",
+    "topic": "Depth-first Search",
+    "description": "Given the roots of two binary trees, write a function to check if they are the same or not.",
+    "testCases": [
+      {
+        "input": "1 2 3 1 2 3",
+        "expectedOutput": "true"
+      },
+      {
+        "input": "1 2 1 null 2",
+        "expectedOutput": "false"
+      }
+    ]
+  },
+  {
+    "title": "Max Depth using DFS",
+    "difficulty": "Easy",
+    "topic": "Depth-first Search",
+    "description": "Find the maximum depth of a binary tree.",
+    "testCases": [
+      {
+        "input": "3 9 20 null null 15 7",
+        "expectedOutput": "3"
+      },
+      {
+        "input": "1 null 2",
+        "expectedOutput": "2"
+      }
+    ]
+  },
+  {
+    "title": "Path Sum Check",
+    "difficulty": "Easy",
+    "topic": "Depth-first Search",
+    "description": "Determine if the tree has a root-to-leaf path summing to target.",
+    "testCases": [
+      {
+        "input": "1 2 3 5",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "5 4 8 11 null 13 4 7 2 null null null 1 22",
+        "expectedOutput": "true"
+      }
+    ]
+  },
+  {
+    "title": "Leaf-Similar Trees",
+    "difficulty": "Easy",
+    "topic": "Depth-first Search",
+    "description": "Check if two trees have the same leaf value sequence.",
+    "testCases": [
+      {
+        "input": "1 2 3 1 3 2",
+        "expectedOutput": "false"
+      },
+      {
+        "input": "1 2 3 1 2 3",
+        "expectedOutput": "true"
+      }
+    ]
+  },
+  {
+    "title": "Find Peak Element Array",
+    "difficulty": "Medium",
+    "topic": "Binary Search",
+    "description": "A peak element is an element that is strictly greater than its neighbors. Find a peak element and return its index.",
+    "testCases": [
+      {
+        "input": "1 2 3 1",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "1 2 1 3 5 6 4",
+        "expectedOutput": "5"
+      }
+    ]
+  }
+]

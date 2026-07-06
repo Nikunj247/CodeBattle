@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Kth Smallest Element in a Sorted Matrix",
+    "difficulty": "Medium",
+    "topic": "Binary Search",
+    "description": "Given an `n x n` `matrix` where each of the rows and columns are sorted in ascending order, return the `kth` smallest element in the matrix.\n\nNote that it is the `kth` smallest element in the sorted order, not the `kth` distinct element.\n\n\nExample 1:\nInput: matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8\nOutput: 13\nExplanation: The elements in the matrix are [1,5,9,10,11,12,13,13,15], and the 8th smallest number is 13\n\nExample 2:\nInput: matrix = [[-5]], k = 1\nOutput: -5\n\nConstraints:\n`n == matrix.length`\n`n == matrix[i].length`\n`1 <= n <= 300`\n`-109 <= matrix[i][j] <= 109`\nAll the rows and columns of `matrix` are guaranteed to be sorted in non-degreasing order.\n\n`1 <= k <= n2`",
+    "starterCode": {
+      "cpp": "// Problem: Kth Smallest Element in a Sorted Matrix\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    // Fast I/O\n    ios_base::sync_with_stdio(false);\n    cin.tie(NULL);\n    \n    // Read your input from standard input (cin)\n    // Write your output to standard output (cout)\n    \n    return 0;\n}",
+      "java": "// Problem: Kth Smallest Element in a Sorted Matrix\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        // Read your input from standard input (sc)\n        // Write your output to standard output (System.out.print)\n        \n    }\n}"
+    },
+    "testCases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expectedOutput": "15"
+      }
+    ]
+  }
+]
