@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Editor from '@monaco-editor/react';
 import { Play, Send, Loader2, Terminal, CheckCircle2, XCircle, GripHorizontal } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const LANGUAGE_TEMPLATES = {
   cpp: `#include <iostream>\nusing namespace std;\n\nint main() {\n    return 0;\n}`,
@@ -124,7 +124,7 @@ export default function CodeEditor({ problemId, starterCode, onSuccess, mode = '
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/execute', {
+      const response = await api.post('/execute', {
         problemId,
         sourceCode: code,
         language,

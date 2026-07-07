@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Swords, User, LogOut, Zap, Flame } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 export default function Navbar() {
   // === 1. Pull the user and logout functions ===
@@ -19,7 +19,7 @@ export default function Navbar() {
       try {
         // We removed the local Elo fetch because AuthContext handles it now!
         // Just calculate the current active win streak
-        const matchRes = await axios.get(`http://localhost:5000/api/matches/${user._id}`);
+        const matchRes = await api.get(`/matches/${user._id}`);
         const matches = matchRes.data; 
         
         let currentStreak = 0;
