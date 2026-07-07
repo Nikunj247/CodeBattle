@@ -48,6 +48,35 @@ const MatchResultModal = ({ matchResult, liveElo, navigate, onReview }) => {
     badgeAudioRef.current.preload = 'auto';
   }
 
+  // === GHOST TAB & UNDO/REDO PREVENTION ===
+  useEffect(() => {
+    let isMounted = true;
+
+    const validateRoomStatus = async () => {
+      try {
+        const response = await api.get(`/matches/${roomId}`);
+        const match = response.data;
+        
+        if (isMounted) {
+          // If the user navigates back to a dead room, immediately bounce them
+          if (match.status === 'completed' || match.status === 'abandoned' || match.status === 'forfeited') {
+            navigate('/dashboard', { replace: true });
+          }
+        }
+      } catch (error) {
+        // If the API throws a 404 (room doesn't exist), bounce them
+        console.error("Room validation error:", error);
+        if (isMounted) navigate('/dashboard', { replace: true });
+      }
+    };
+
+    validateRoomStatus();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [roomId, navigate]);
+
   useEffect(() => {
     slideAudioRef.current.load();
     badgeAudioRef.current.load();
@@ -463,7 +492,7 @@ export default function RankedArena() {
                ))}
             </div>
           </div>
-          <button onClick={() => navigate('/dashboard')} className="px-5 py-2 bg-white text-black font-bold text-[10px] uppercase tracking-widest rounded-lg hover:bg-neutral-200 transition-colors shadow-lg">
+          <button onClick={() => navigate('/dashboard', {replace : true})} className="px-5 py-2 bg-white text-black font-bold text-[10px] uppercase tracking-widest rounded-lg hover:bg-neutral-200 transition-colors shadow-lg">
             Exit to Dashboard
           </button>
         </div>
